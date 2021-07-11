@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* Drop Default Styles - here I`m dropping default styles */
+/*==========START========== */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  /* line-height: 1.5; */
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ==================END================== */
+/*fonts start*/
+/*fonts end*/
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* END container */
+/* END section */
+.header {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__links {
+  width: 100%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #fcae61;
+}
+
+.header__logo span {
+  color: #242f51;
+}
+
+/* END header */
+.nav__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #242f51;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  cursor: pointer;
+  width: 170px;
+  height: 57px;
+  background-color: #2500f9;
+  -webkit-border-radius: 28.5px;
+          border-radius: 28.5px;
+  border: none;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.btn__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #260bc0;
+}
+
+.intro {
+  position: relative;
+  height: 100vh;
+  max-height: 1000px;
+  padding-top: 100px;
+  background-color: rgba(249, 251, 252, 0.4);
+}
+
+.intro__bgbottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.intro__bgleft {
+  position: absolute;
+  top: 209px;
+  right: 50%;
+  z-index: -2;
+  opacity: 0.18;
+}
+
+.intro__bgcenter {
+  position: absolute;
+  top: 167px;
+  left: 46.5%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.intro__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro__item {
+  width: 50%;
+}
+
+.intro__item--first {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__suptext {
+  position: relative;
+  width: 100%;
+  max-width: 365px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #242f51;
+  background-color: #e2eaed;
+  -webkit-border-radius: 17.5px;
+          border-radius: 17.5px;
+  padding: 6px 45px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.intro__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 9px;
+  background-color: #feaa25;
+  -webkit-border-radius: 17.5px;
+          border-radius: 17.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #242f51;
+  margin: 8px 0;
+}
+
+.intro__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #616368;
+  margin: 8px 0;
+}
+
+.intro__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 38px 0 8px;
+}
+
+.intro__link {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__hlink {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2500f9;
+  text-decoration: none;
+}
+
+.intro__hlink:hover {
+  text-decoration: underline;
+}
+
+.intro__item--second {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
