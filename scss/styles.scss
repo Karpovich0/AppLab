@@ -15,6 +15,9 @@
     
     .section {
         padding: 90px 0;
+        &--border-bottom {
+            border-bottom: 2px rgba($color: #e5e6e5, $alpha: .43) solid;
+        }
         &__header {
             width: 100%;
             max-width: 435px;
@@ -25,7 +28,12 @@
             line-height: 1.27;
             font-weight: 600;
             color: #242f51;
-            margin: 5px 0;
+            margin: 5px 0 12px;
+        }
+        &__title--designed {
+            width: 100%;
+            max-width: 360px;
+            margin-bottom: 25px;
         }
         &__subtitle {
             font-family: $Poppins;
@@ -42,7 +50,7 @@
         z-index: 1000;
         position: absolute;
         width: 100%;
-        top: 40px;
+        top: 60px;
         left: 0;
         right: 0;
         &__inner {
@@ -84,6 +92,7 @@
             text-decoration: underline;
         }
     }
+    /* END nav */
     
     .btn {
         cursor: pointer;
@@ -104,11 +113,12 @@
             background-color: #260bc0;
         }
     }
+    /* END btn */
     
     .intro {
         position: relative;
         height: 100vh;
-        padding-top: 110px;
+        padding-top: 170px;
         background-color: rgba($color: #f9fbfc, $alpha: .4);
         &__bgbottom {
             position: absolute;
@@ -162,7 +172,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            padding: 9px;
+            padding: 11px;
             background-color: #feaa25;
             border-radius: 17.5px;
             display: flex;
@@ -329,6 +339,7 @@
             color: #616368;
         }
     }
+    /* END row-col */
     
     .jackpots {
         &__header {
@@ -365,3 +376,30 @@
             margin: 0 auto;
         }
     }
+    /* END jackpots */
+    
+    .designed {
+        display: flex;
+        align-items: center;
+        &__item {
+            padding: 40px 0;
+            width: 50%;
+        }
+        &__item--first {
+            position: relative;
+            padding-right: 50px;
+        }
+        &__item--second {
+            padding-left: 50px;
+        }
+        &__img {
+            position: absolute;
+            z-index: 10;
+            right: 50px;
+            top: -260px;
+        }
+        &__btn {
+            padding: 25px 0;
+        }
+    }
+    /* END designed */
