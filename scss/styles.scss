@@ -30,7 +30,7 @@
         &__subtitle {
             font-family: $Poppins;
             font-size: 16px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #616368;
             margin: 7px 0;
@@ -149,7 +149,7 @@
             max-width: 365px;
             font-family: $Poppins;
             font-size: 18px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #242f51;
             background-color: #e2eaed;
@@ -180,7 +180,7 @@
         &__subtitle {
             font-family: $Poppins;
             font-size: 18px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #616368;
             margin: 8px 0;
@@ -222,7 +222,7 @@
             text-align: center;
             font-family: $Poppins;
             font-size: 16px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #242f51;
             margin-bottom: 40px;
@@ -268,13 +268,22 @@
             max-width: 380px;
             padding: 78px 0;
         }
-        &__row {
-            margin-bottom: 55px;
-            position: relative;
-            padding-left: 120px;
-        }
-        &__row:last-child {
+    }
+    /* END features */
+    
+    .row-col {
+        margin-bottom: 55px;
+        position: relative;
+        padding-left: 120px;
+        &:last-child {
             margin-bottom: 0;
+        }
+        &__horizontal {
+            margin-bottom: 0;
+            padding-left: 0;
+            padding-top: 120px;
+            width: 100%;
+            max-width: 265px;
         }
         &__circle {
             position: absolute;
@@ -301,7 +310,7 @@
             font-family: $Poppins;
             font-size: 20px;
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
         &__title--red {
             color: #f55767;
@@ -315,12 +324,11 @@
         &__text {
             font-family: $Poppins;
             font-size: 16px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #616368;
         }
     }
-    /* END features */
     
     .jackpots {
         &__header {
@@ -344,14 +352,16 @@
         &__item--regular {
             font-family: $Poppins;
             font-size: 16px;
-            line-height: 1.45;
+            line-height: 1.62;
             font-weight: 400;
             color: #616368;
         }
         &__body {
             display: flex;
             width: 100%;
-            max-width: 1030px;
+            max-width: 1010px;
             justify-content: space-between;
+            padding-top: 100px;
+            margin: 0 auto;
         }
     }
