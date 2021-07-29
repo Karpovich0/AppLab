@@ -18,6 +18,18 @@
 </head>
 
 <body>
+    <svg style="display: none;">
+        <symbol id="meet__star" viewBox="0 -10 511.98685 511">
+            <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" />
+        </symbol>
+        <symbol id="slider__arrow"  viewBox="0 0 492.004 492.004" >
+            <path d="M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z"/>
+        </symbol>
+    </svg>
 
     <header class="header">
         <div class="container">
@@ -51,11 +63,7 @@
     <!-- END header -->
 
     <div class="intro">
-        <img src="/src/intro/intro__bottom__bg.png" alt="" class="intro__bgbottom">
-        <img src="/src/intro/intro__left__bg.png" alt="" class="intro__bgleft">
-        <img src="/src/intro/intro__bgcenter.png" alt="" class="intro__bgcenter">
-
-
+        <img src="/src/intro/intro__bg.png" alt="" class="intro__bg">
 
         <div class="container">
 
@@ -80,8 +88,8 @@
                                 <span class="btn__text">Try for free</span> 
                                 </button>
                         </div>
-                        <div class="intro__link">
-                            <a class="intro__hlink" href="">Watch demo video</a>
+                        <div class="link intro__link">
+                            <a class="link__item" href="">Watch demo video</a>
                         </div>
                     </div>
 
@@ -129,10 +137,10 @@
 
                 <div class="features__item">
 
-                    <div class="section__header">
+                    <header class="section__header">
                         <h2 class="section__title">Awesome apps features</h2>
                         <h3 class="section__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</h3>
-                    </div>
+                    </header>
 
                     <div class="features__body">
 
@@ -240,11 +248,11 @@
                 </div>
 
                 <div class="designed__item designed__item--second">
-                    <div class="section__header">
+                    <header class="section__header">
                         <h2 class="section__title section__title--designed">Designed & built by the latest code integration
                         </h2>
                         <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
-                    </div>
+                    </header>
 
                     <div class="designed__btn">
                         <button class="btn" type="button">
@@ -266,11 +274,11 @@
             <div class="why-choose">
 
                 <div class="why-choose__header">
-                    <div class="section__header section__header--wide">
+                    <header class="section__header section__header--wide">
                         <h2 class="section__title section__title--wide">Why you should choose our app
                         </h2>
                         <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
-                    </div>
+                    </header>
                 </div>
 
                 <div class="why-choose__body">
@@ -353,15 +361,15 @@
     <!-- END why-choose -->
 
     <section class="section section--without-padding">
-        <div class="container">
+        <div class="container__wide">
 
             <div class="ultimate">
-                <div class="ultimate__item">
-                    <div class="section__header">
+                <div class="ultimate__inner">
+                    <header class="section__header">
                         <h2 class="section__title">Ultimate features that we built</h2>
                         <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely.</h3>
-                    </div>
-                    <div class="ultimate__inner">
+                    </header>
+                    <div class="ultimate__body">
 
                         <div class="row-col row-col__horizontal row-col__padding--bottom">
 
@@ -398,11 +406,11 @@
 
                         <div class="row-col row-col__horizontal row-col__padding--bottom">
 
-                            <div class="row-col__circle ">
+                            <div class="row-col__circle row-col__circle--blue">
                                 <img src="/src/row-col/12.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title row-col__title--blue">Network Effect</h3>
+                            <h3 class="row-col__title ">Network Effect</h3>
                             <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
@@ -410,12 +418,12 @@
                     </div>
                     <div>
                         <button class="btn" type="button">
-                        <span class="btn__text">Try for free</span> 
+                        <span class="btn__text">See all</span> 
                         </button>
                     </div>
 
                 </div>
-                <div class="ultimate__item">
+                <div class="ultimate__img-wrapper">
 
                     <img src="/src/ultimate/ultimate__bg.png" alt="" class="ultimate__img">
 
@@ -425,8 +433,190 @@
 
         </div>
     </section>
+    <!-- END ultimate -->
+
+    <section class="section section--border-bottom">
+        <div class="container">
+
+            <div class="get">
+
+                <div class="get__header">
+                    <header class="section__header section__header--wide">
+                        <h2 class="section__title section__title--wide section__title-max-width">Get awesome features, without extra charges
+                        </h2>
+                        <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                    </header>
+                </div>
+
+                <div class="get__switch">
+                    <div>
+                        <button class="btn btn__switch btn__switch-disable" type="button">
+                        <span class="btn__text">Monthly</span> 
+                        </button>
+                    </div>
+                    <div>
+                        <button class="btn btn__switch btn__switch-disable" type="button">
+                        <span class="btn__text">Annually</span> 
+                        </button>
+                    </div>
+                </div>
+                <div class="get__body">
+                    <div class="card">
+                        <div class="card__header">
+
+                            <div class="card__price"><span class="card__amount">$0</span> / month</div>
+                            <div class="card__name">Business Class</div>
+                            <div class="card__description">For small teams or office</div>
+
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li> Drag & Drop Builder</li>
+                                <li>1,000's of Templates</li>
+                                <li>Blog Support Tools</li>
+                                <li>eCommerce Store</li>
+                            </ul>
+                        </div>
+                        <div class="card__trail">
+
+                            <div class="card__btn">
+                                <button class="btn  btn__wide" type="button">
+                                     <span class="btn__text">Start free trail</span> 
+                                </button>
+                            </div>
+
+                            <div class="link card__link link__hiden">
+                                <a class="link__item" href="">Or Start 14 days trail</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+
+                            <div class="card__price"><span class="card__amount">$99</span> / month</div>
+                            <div class="card__name">Pro Master</div>
+                            <div class="card__description">For Best opportunities</div>
+
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li> Drag & Drop Builder</li>
+                                <li>1,000's of Templates</li>
+                                <li>Blog Support Tools</li>
+                                <li>eCommerce Store</li>
+                            </ul>
+                        </div>
+                        <div class="card__trail">
+
+                            <div class="card__btn">
+                                <button class="btn  btn__wide" type="button">
+                                     <span class="btn__text">Start free trail</span> 
+                                </button>
+                            </div>
+
+                            <div class="link card__link link__hiden">
+                                <a class="link__item" href="">Or Start 14 days trail</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
+            </div>
+        </div>
+    </section>
+    <!-- END get END card-->
+
+    <section class="section">
+        <div class="container__wide">
+
+            <div class="meet">
+
+                <img src="/src/meet/meet__img.png" alt="" class="meet__img">
+
+                <div class="meet__body">
+
+                    <header class="section__header">
+                        <h2 class="section__title">Meet Client Satisfaction by using product</h2>
+                        <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume. Elevant channels such as Facebook.</h3>
+                    </header>
+
+                    <div class="meet__rating">
+
+                        <ul class="meet__stars-list">
+                            <li>
+                                <svg class="meet__star">
+                                    <use xlink:href="#meet__star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="meet__star">
+                                    <use xlink:href="#meet__star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="meet__star">
+                                    <use xlink:href="#meet__star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="meet__star">
+                                    <use xlink:href="#meet__star"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="meet__star">
+                                    <use xlink:href="#meet__star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <article class="meet__article">
+
+                        <h3 class="meet__title">User friendly & Customizable</h3>
+                        <p class="meet__text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+                            User generated content in real-time will have multiple touchpoints for offshoring.</p>
+
+                    </article>
+
+                    <div class="slider">
+
+                        <img src="/src/meet/slider__img.png" alt="" class="slider__img">
+
+                        <div class="slider__name">Zoltan Nemeth</div>
+                        <div class="slider__position">CEO of Pixler Lab</div>
+
+                        <div class="slider__buttons-sections">
+
+                            <button class="slider__btn slider__btn--left">  
+                                <svg class="slider__arrow">
+                                    <use xlink:href="#slider__arrow"></use>
+                                </svg>
+                            </button>
+
+                            <button class="slider__btn">  
+                                <svg class="slider__arrow">
+                                <use xlink:href="#slider__arrow"></use>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 
 
