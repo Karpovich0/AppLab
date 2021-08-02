@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +11,16 @@
     <title>AppLab</title>
     <link rel="shortcut icon" href="/src/icons/shortcut__icon.png" type="image/png">
 
+    <link rel="stylesheet" href="/css/DDS2.css">
     <link rel="stylesheet" href="/css/styles.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/837f63a7c3.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -31,13 +38,15 @@
         </symbol>
     </svg>
 
+
+
     <header class="header">
         <div class="container">
 
             <div class="header__inner">
 
                 <div class="header__links">
-                    <div class="header__logo">App<span>Lab</span></div>
+                    <div class="logo">App<span>Lab</span></div>
 
                     <nav class="nav">
                         <a href="" class="nav__link">Home</a>
@@ -62,117 +71,172 @@
 
     <!-- END header -->
 
-    <div class="intro">
-        <img src="/src/intro/intro__bg.png" alt="" class="intro__bg">
+    <main>
 
-        <div class="container">
+        <div class="intro">
+            <img src="/src/intro/intro__bg.png" alt="" class="intro__bg">
 
-            <div class="intro__inner">
+            <div class="container">
 
-                <div class="intro__item intro__item--first">
+                <div class="intro__inner">
 
-                    <div class="intro__suptext">
-                        <div class="intro__img">
-                            <img class="intro__choice" src="/src/intro/choice__img.png" alt="">
+                    <div class="intro__item intro__item--first">
+
+                        <div class="intro__suptext">
+                            <div class="intro__img">
+                                <img class="intro__choice" src="/src/intro/choice__img.png" alt="">
+                            </div>
+                            #1 Editiors Choice App of 2020
                         </div>
-                        #1 Editiors Choice App of 2020
-                    </div>
 
-                    <h1 class="intro__title">Best app for your modern lifestyle</h1>
+                        <h1 class="intro__title">Best app for your modern lifestyle</h1>
 
-                    <h3 class="intro__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</h3>
+                        <h3 class="intro__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</h3>
 
-                    <div class="intro__footer">
-                        <div>
-                            <button class="btn" type="button">
+                        <div class="intro__footer">
+                            <div>
+                                <button class="btn" type="button">
                                 <span class="btn__text">Try for free</span> 
                                 </button>
+                            </div>
+                            <div class="link intro__link">
+                                <a class="link__item" href="">Watch demo video</a>
+                            </div>
                         </div>
-                        <div class="link intro__link">
-                            <a class="link__item" href="">Watch demo video</a>
-                        </div>
+
+                    </div>
+
+                    <div class="intro__item intro__item--second">
+                        <img src="/src/intro/intro__phone.png" alt="" class="intro__phone">
                     </div>
 
                 </div>
 
-                <div class="intro__item intro__item--second">
-                    <img src="/src/intro/intro__phone.png" alt="" class="intro__phone">
-                </div>
-
             </div>
 
         </div>
 
-    </div>
+        <!-- END intro -->
 
-    <!-- END intro -->
+        <div class="section">
+            <div class="trusted">
 
-    <div class="section">
-        <div class="trusted">
+                <h3 class="trusted__title">Trusted by companies like</h3>
 
-            <h3 class="trusted__title">Trusted by companies like</h3>
-
-            <div class="trusted__body">
-                <div class="trusted__item"> <img src="/src/trusted/1.png" alt="" class="trusted__img"></div>
-                <div class="trusted__item"> <img src="/src/trusted/2.png" alt="" class="trusted__img"></div>
-                <div class="trusted__item"> <img src="/src/trusted/3.png" alt="" class="trusted__img"></div>
-                <div class="trusted__item"> <img src="/src/trusted/4.png" alt="" class="trusted__img"></div>
-                <div class="trusted__item"> <img src="/src/trusted/5.png" alt="" class="trusted__img"></div>
-
-            </div>
-
-        </div>
-    </div>
-    <!-- END trusted -->
-
-    <section class="section">
-        <div class="container">
-
-            <div class="features">
-                <div class="features__item features__item--first">
-
-                    <img src="/src/features/phone.png" alt="" class="features__phone">
+                <div class="trusted__body">
+                    <div class="trusted__item"> <img src="/src/trusted/1.png" alt="" class="trusted__img"></div>
+                    <div class="trusted__item"> <img src="/src/trusted/2.png" alt="" class="trusted__img"></div>
+                    <div class="trusted__item"> <img src="/src/trusted/3.png" alt="" class="trusted__img"></div>
+                    <div class="trusted__item"> <img src="/src/trusted/4.png" alt="" class="trusted__img"></div>
+                    <div class="trusted__item"> <img src="/src/trusted/5.png" alt="" class="trusted__img"></div>
 
                 </div>
 
-                <div class="features__item">
+            </div>
+        </div>
+        <!-- END trusted -->
 
-                    <header class="section__header">
-                        <h2 class="section__title">Awesome apps features</h2>
-                        <h3 class="section__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</h3>
-                    </header>
+        <section class="section">
+            <div class="container">
 
-                    <div class="features__body">
+                <div class="features">
+                    <div class="features__item features__item--first">
 
-                        <div class="row-col">
+                        <img src="/src/features/phone.png" alt="" class="features__phone">
 
-                            <div class="row-col__circle row-col__circle--red">
-                                <img src="/src/row-col/1.png" alt="" class="row-col__icon">
+                    </div>
+
+                    <div class="features__item">
+
+                        <header class="section__header">
+                            <h2 class="section__title">Awesome apps features</h2>
+                            <h3 class="section__subtitle">Increase productivity with a simple to-do app. app for managing your personal budgets.</h3>
+                        </header>
+
+                        <div class="features__body">
+
+                            <div class="row-col">
+
+                                <div class="row-col__circle row-col__circle--red">
+                                    <img src="/src/row-col/1.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title row-col__title--red">Fast Performance</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
                             </div>
 
-                            <h3 class="row-col__title row-col__title--red">Fast Performance</h3>
-                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                            <div class="row-col">
+
+                                <div class="row-col__circle row-col__circle--blue">
+                                    <img src="/src/row-col/2.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title  row-col__title--blue">Prototyping</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
+
+                            <div class="row-col">
+
+                                <div class="row-col__circle row-col__circle--green">
+                                    <img src="/src/row-col/3.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title  row-col__title--green">Vector Editing</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
 
                         </div>
 
-                        <div class="row-col">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- END features -->
+
+        <section class="section">
+            <div class="container">
+                <div class="jackpots">
+                    <header class="jackpots__header">
+
+                        <div class="jackpots__item jackpots__item--bold">Smart jackpots that you may love this anytime & anywhere</div>
+                        <div class="jackpots__item jackpots__item--regular">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</div>
+
+                    </header>
+
+                    <div class="jackpots__body">
+                        <div class="row-col row-col__horizontal">
+
+                            <div class="row-col__circle row-col__circle--red">
+                                <img src="/src/row-col/4.png" alt="" class="row-col__icon">
+                            </div>
+
+                            <h3 class="row-col__title row-col__title--red">Automatic Payouts</h3>
+                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                        </div>
+                        <div class="row-col row-col__horizontal">
 
                             <div class="row-col__circle row-col__circle--blue">
-                                <img src="/src/row-col/2.png" alt="" class="row-col__icon">
+                                <img src="/src/row-col/5.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title  row-col__title--blue">Prototyping</h3>
+                            <h3 class="row-col__title row-col__title--blue">Network Effect</h3>
                             <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
-
-                        <div class="row-col">
+                        <div class="row-col row-col__horizontal">
 
                             <div class="row-col__circle row-col__circle--green">
-                                <img src="/src/row-col/3.png" alt="" class="row-col__icon">
+                                <img src="/src/row-col/6.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title  row-col__title--green">Vector Editing</h3>
+                            <h3 class="row-col__title row-col__title--green">Bigger Rewards Method</h3>
                             <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
@@ -182,430 +246,379 @@
                 </div>
 
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- END jackpots -->
 
-    <!-- END features -->
+        <section class="section section--border-bottom">
+            <div class="container">
+                <div class="designed">
 
-    <section class="section">
-        <div class="container">
-            <div class="jackpots">
-                <div class="jackpots__header">
-
-                    <div class="jackpots__item jackpots__item--bold">Smart jackpots that you may love this anytime & anywhere</div>
-                    <div class="jackpots__item jackpots__item--regular">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</div>
-
-                </div>
-
-                <div class="jackpots__body">
-                    <div class="row-col row-col__horizontal">
-
-                        <div class="row-col__circle row-col__circle--red">
-                            <img src="/src/row-col/4.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--red">Automatic Payouts</h3>
-                        <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-                    <div class="row-col row-col__horizontal">
-
-                        <div class="row-col__circle row-col__circle--blue">
-                            <img src="/src/row-col/5.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--blue">Network Effect</h3>
-                        <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-                    <div class="row-col row-col__horizontal">
-
-                        <div class="row-col__circle row-col__circle--green">
-                            <img src="/src/row-col/6.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--green">Bigger Rewards Method</h3>
-                        <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
+                    <div class="designed__item designed__item--first">
+                        <img src="/src/designed/1.png" alt="" class="designed__img">
                     </div>
 
-                </div>
+                    <div class="designed__item designed__item--second">
+                        <header class="section__header">
+                            <h2 class="section__title section__title--designed">Designed & built by the latest code integration
+                            </h2>
+                            <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                        </header>
 
-            </div>
-
-        </div>
-    </section>
-
-    <!-- END jackpots -->
-
-    <section class="section section--border-bottom">
-        <div class="container">
-            <div class="designed">
-
-                <div class="designed__item designed__item--first">
-                    <img src="/src/designed/1.png" alt="" class="designed__img">
-                </div>
-
-                <div class="designed__item designed__item--second">
-                    <header class="section__header">
-                        <h2 class="section__title section__title--designed">Designed & built by the latest code integration
-                        </h2>
-                        <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
-                    </header>
-
-                    <div class="designed__btn">
-                        <button class="btn" type="button">
+                        <div class="designed__btn">
+                            <button class="btn" type="button">
                             <span class="btn__text">Try for free</span> 
                         </button>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- END designed -->
+        <!-- END designed -->
 
-    <section class="section">
-        <div class="container">
+        <section class="section">
+            <div class="container">
 
-            <div class="why-choose">
+                <div class="why-choose">
 
-                <div class="why-choose__header">
-                    <header class="section__header section__header--wide">
-                        <h2 class="section__title section__title--wide">Why you should choose our app
-                        </h2>
-                        <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
-                    </header>
-                </div>
-
-                <div class="why-choose__body">
-
-
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--red row-col__circle--centred">
-                            <img src="/src/row-col/7.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">App Development</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
+                    <div class="why-choose__header">
+                        <header class="section__header section__header--wide">
+                            <h2 class="section__title section__title--wide">Why you should choose our app
+                            </h2>
+                            <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                        </header>
                     </div>
 
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--ocean row-col__circle--centred">
-                            <img src="/src/row-col/8.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">10 Times Award</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--yellow row-col__circle--centred">
-                            <img src="/src/row-col/9.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">Cloud Storage</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--green row-col__circle--centred">
-                            <img src="/src/row-col/10.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">Customization</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--blue row-col__circle--centred">
-                            <img src="/src/row-col/11.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">UX Planning</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-
-                    <div class="row-col row-col__horizontal row-col--centred">
-
-                        <div class="row-col__circle row-col__circle--brown row-col__circle--centred">
-                            <img src="/src/row-col/12.png" alt="" class="row-col__icon">
-                        </div>
-
-                        <h3 class="row-col__title row-col__title--centred">Customer Support</h3>
-                        <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-
-                    </div>
-
-                </div>
+                    <div class="why-choose__body">
 
 
-            </div>
+                        <div class="row-col row-col__horizontal row-col--centred">
 
-        </div>
-    </section>
-
-    <!-- END why-choose -->
-
-    <section class="section section--without-padding">
-        <div class="container__wide">
-
-            <div class="ultimate">
-                <div class="ultimate__inner">
-                    <header class="section__header">
-                        <h2 class="section__title">Ultimate features that we built</h2>
-                        <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely.</h3>
-                    </header>
-                    <div class="ultimate__body">
-
-                        <div class="row-col row-col__horizontal row-col__padding--bottom">
-
-                            <div class="row-col__circle row-col__circle--red">
+                            <div class="row-col__circle row-col__circle--red row-col__circle--centred">
                                 <img src="/src/row-col/7.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title">Automatic Payouts</h3>
-                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                            <h3 class="row-col__title row-col__title--centred">App Development</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
 
-                        <div class="row-col row-col__horizontal row-col__padding--bottom">
+                        <div class="row-col row-col__horizontal row-col--centred">
 
-                            <div class="row-col__circle row-col__circle--green">
-                                <img src="/src/row-col/11.png" alt="" class="row-col__icon">
+                            <div class="row-col__circle row-col__circle--ocean row-col__circle--centred">
+                                <img src="/src/row-col/8.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title">Network Effect</h3>
-                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                            <h3 class="row-col__title row-col__title--centred">10 Times Award</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
 
-                        <div class="row-col row-col__horizontal row-col__padding--bottom">
+                        <div class="row-col row-col__horizontal row-col--centred">
 
-                            <div class="row-col__circle row-col__circle--yellow">
+                            <div class="row-col__circle row-col__circle--yellow row-col__circle--centred">
                                 <img src="/src/row-col/9.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title ">Automatic Payouts</h3>
-                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                            <h3 class="row-col__title row-col__title--centred">Cloud Storage</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
 
-                        <div class="row-col row-col__horizontal row-col__padding--bottom">
+                        <div class="row-col row-col__horizontal row-col--centred">
 
-                            <div class="row-col__circle row-col__circle--blue">
+                            <div class="row-col__circle row-col__circle--green row-col__circle--centred">
+                                <img src="/src/row-col/10.png" alt="" class="row-col__icon">
+                            </div>
+
+                            <h3 class="row-col__title row-col__title--centred">Customization</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                        </div>
+
+                        <div class="row-col row-col__horizontal row-col--centred">
+
+                            <div class="row-col__circle row-col__circle--blue row-col__circle--centred">
+                                <img src="/src/row-col/11.png" alt="" class="row-col__icon">
+                            </div>
+
+                            <h3 class="row-col__title row-col__title--centred">UX Planning</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                        </div>
+
+                        <div class="row-col row-col__horizontal row-col--centred">
+
+                            <div class="row-col__circle row-col__circle--brown row-col__circle--centred">
                                 <img src="/src/row-col/12.png" alt="" class="row-col__icon">
                             </div>
 
-                            <h3 class="row-col__title ">Network Effect</h3>
-                            <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                            <h3 class="row-col__title row-col__title--centred">Customer Support</h3>
+                            <p class="row-col__text row-col__text--centred">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
 
                         </div>
 
                     </div>
-                    <div>
-                        <button class="btn" type="button">
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- END why-choose -->
+
+        <section class="section section--without-padding">
+            <div class="container__wide">
+
+                <div class="ultimate">
+                    <div class="ultimate__inner">
+                        <header class="section__header">
+                            <h2 class="section__title">Ultimate features that we built</h2>
+                            <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely.</h3>
+                        </header>
+                        <div class="ultimate__body">
+
+                            <div class="row-col row-col__horizontal row-col__padding--bottom">
+
+                                <div class="row-col__circle row-col__circle--red">
+                                    <img src="/src/row-col/7.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title">Automatic Payouts</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
+
+                            <div class="row-col row-col__horizontal row-col__padding--bottom">
+
+                                <div class="row-col__circle row-col__circle--green">
+                                    <img src="/src/row-col/11.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title">Network Effect</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
+
+                            <div class="row-col row-col__horizontal row-col__padding--bottom">
+
+                                <div class="row-col__circle row-col__circle--yellow">
+                                    <img src="/src/row-col/9.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title ">Automatic Payouts</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
+
+                            <div class="row-col row-col__horizontal row-col__padding--bottom">
+
+                                <div class="row-col__circle row-col__circle--blue">
+                                    <img src="/src/row-col/12.png" alt="" class="row-col__icon">
+                                </div>
+
+                                <h3 class="row-col__title ">Network Effect</h3>
+                                <p class="row-col__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <button class="btn" type="button">
                         <span class="btn__text">See all</span> 
                         </button>
+                        </div>
+
                     </div>
+                    <div class="ultimate__img-wrapper">
 
-                </div>
-                <div class="ultimate__img-wrapper">
+                        <img src="/src/ultimate/ultimate__bg.png" alt="" class="ultimate__img">
 
-                    <img src="/src/ultimate/ultimate__bg.png" alt="" class="ultimate__img">
+                    </div>
 
                 </div>
 
             </div>
+        </section>
+        <!-- END ultimate -->
 
-        </div>
-    </section>
-    <!-- END ultimate -->
+        <section class="section section--border-bottom">
+            <div class="container">
 
-    <section class="section section--border-bottom">
-        <div class="container">
+                <div class="get">
 
-            <div class="get">
+                    <div class="get__header">
+                        <header class="section__header section__header--wide">
+                            <h2 class="section__title section__title--ultra-wide ">Get awesome features, without extra charges
+                            </h2>
+                            <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                        </header>
+                    </div>
 
-                <div class="get__header">
-                    <header class="section__header section__header--wide">
-                        <h2 class="section__title section__title--wide section__title-max-width">Get awesome features, without extra charges
-                        </h2>
-                        <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
-                    </header>
-                </div>
-
-                <div class="get__switch">
-                    <div>
-                        <button class="btn btn__switch btn__switch-disable" type="button">
+                    <div class="get__switch">
+                        <div>
+                            <button class="btn btn__switch btn__switch-disable" type="button">
                         <span class="btn__text">Monthly</span> 
                         </button>
-                    </div>
-                    <div>
-                        <button class="btn btn__switch btn__switch-disable" type="button">
+                        </div>
+                        <div>
+                            <button class="btn btn__switch btn__switch-disable" type="button">
                         <span class="btn__text">Annually</span> 
                         </button>
+                        </div>
                     </div>
-                </div>
-                <div class="get__body">
-                    <div class="card">
-                        <div class="card__header">
+                    <div class="get__body">
+                        <div class="card">
+                            <div class="card__header">
 
-                            <div class="card__price"><span class="card__amount">$0</span> / month</div>
-                            <div class="card__name">Business Class</div>
-                            <div class="card__description">For small teams or office</div>
+                                <div class="card__price"><span class="card__amount">$0</span> / month</div>
+                                <div class="card__name">Business Class</div>
+                                <div class="card__description">For small teams or office</div>
 
-                        </div>
-                        <div class="card__body">
-                            <ul class="card__list">
-                                <li> Drag & Drop Builder</li>
-                                <li>1,000's of Templates</li>
-                                <li>Blog Support Tools</li>
-                                <li>eCommerce Store</li>
-                            </ul>
-                        </div>
-                        <div class="card__trail">
+                            </div>
+                            <div class="card__body">
+                                <ul class="card__list">
+                                    <li> Drag & Drop Builder</li>
+                                    <li>1,000's of Templates</li>
+                                    <li>Blog Support Tools</li>
+                                    <li>eCommerce Store</li>
+                                </ul>
+                            </div>
+                            <div class="card__trail">
 
-                            <div class="card__btn">
-                                <button class="btn  btn__wide" type="button">
+                                <div class="card__btn">
+                                    <button class="btn  btn__wide" type="button">
                                      <span class="btn__text">Start free trail</span> 
                                 </button>
+                                </div>
+
+                                <div class="link card__link link__hiden">
+                                    <a class="link__item" href="">Or Start 14 days trail</a>
+                                </div>
+
                             </div>
+                        </div>
 
-                            <div class="link card__link link__hiden">
-                                <a class="link__item" href="">Or Start 14 days trail</a>
+                        <div class="card">
+                            <div class="card__header">
+
+                                <div class="card__price"><span class="card__amount">$99</span> / month</div>
+                                <div class="card__name">Pro Master</div>
+                                <div class="card__description">For Best opportunities</div>
+
                             </div>
+                            <div class="card__body">
+                                <ul class="card__list">
+                                    <li> Drag & Drop Builder</li>
+                                    <li>1,000's of Templates</li>
+                                    <li>Blog Support Tools</li>
+                                    <li>eCommerce Store</li>
+                                </ul>
+                            </div>
+                            <div class="card__trail">
 
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__header">
-
-                            <div class="card__price"><span class="card__amount">$99</span> / month</div>
-                            <div class="card__name">Pro Master</div>
-                            <div class="card__description">For Best opportunities</div>
-
-                        </div>
-                        <div class="card__body">
-                            <ul class="card__list">
-                                <li> Drag & Drop Builder</li>
-                                <li>1,000's of Templates</li>
-                                <li>Blog Support Tools</li>
-                                <li>eCommerce Store</li>
-                            </ul>
-                        </div>
-                        <div class="card__trail">
-
-                            <div class="card__btn">
-                                <button class="btn  btn__wide" type="button">
+                                <div class="card__btn">
+                                    <button class="btn  btn__wide" type="button">
                                      <span class="btn__text">Start free trail</span> 
                                 </button>
-                            </div>
+                                </div>
 
-                            <div class="link card__link link__hiden">
-                                <a class="link__item" href="">Or Start 14 days trail</a>
+                                <div class="link card__link link__hiden">
+                                    <a class="link__item" href="">Or Start 14 days trail</a>
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
+
                 </div>
-
-
             </div>
-        </div>
-    </section>
-    <!-- END get END card-->
+        </section>
+        <!-- END get END card-->
 
-    <section class="section">
-        <div class="container__wide">
+        <section class="section">
+            <div class="container__wide">
 
-            <div class="meet">
+                <div class="meet">
 
-                <img src="/src/meet/meet__img.png" alt="" class="meet__img">
+                    <img src="/src/meet/meet__img.png" alt="" class="meet__img">
 
-                <div class="meet__body">
+                    <div class="meet__body">
 
-                    <header class="section__header">
-                        <h2 class="section__title">Meet Client Satisfaction by using product</h2>
-                        <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume. Elevant channels such as Facebook.</h3>
-                    </header>
+                        <header class="section__header section__header--bigger-width">
+                            <h2 class="section__title section__title--bigger-font">Meet Client Satisfaction by using product</h2>
+                            <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume. Elevant channels such as Facebook.</h3>
+                        </header>
 
-                    <div class="meet__rating">
+                        <div class="meet__rating">
 
-                        <ul class="meet__stars-list">
-                            <li>
-                                <svg class="meet__star">
+                            <ul class="meet__stars-list">
+                                <li>
+                                    <svg class="meet__star">
                                     <use xlink:href="#meet__star"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg class="meet__star">
+                                </li>
+                                <li>
+                                    <svg class="meet__star">
                                     <use xlink:href="#meet__star"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg class="meet__star">
+                                </li>
+                                <li>
+                                    <svg class="meet__star">
                                     <use xlink:href="#meet__star"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg class="meet__star">
+                                </li>
+                                <li>
+                                    <svg class="meet__star">
                                     <use xlink:href="#meet__star"></use>
                                 </svg>
-                            </li>
-                            <li>
-                                <svg class="meet__star">
+                                </li>
+                                <li>
+                                    <svg class="meet__star">
                                     <use xlink:href="#meet__star"></use>
                                 </svg>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
 
-                    </div>
+                        </div>
 
-                    <article class="meet__article">
+                        <article class="meet__article">
 
-                        <h3 class="meet__title">User friendly & Customizable</h3>
-                        <p class="meet__text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                            User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="meet__title">User friendly & Customizable</h3>
+                            <p class="meet__text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+                                User generated content in real-time will have multiple touchpoints for offshoring.</p>
 
-                    </article>
+                        </article>
 
-                    <div class="slider">
+                        <div class="slider">
 
-                        <img src="/src/meet/slider__img.png" alt="" class="slider__img">
+                            <img src="/src/meet/slider__img.png" alt="" class="slider__img">
 
-                        <div class="slider__name">Zoltan Nemeth</div>
-                        <div class="slider__position">CEO of Pixler Lab</div>
+                            <div class="slider__name">Zoltan Nemeth</div>
+                            <div class="slider__position">CEO of Pixler Lab</div>
 
-                        <div class="slider__buttons-sections">
+                            <div class="slider__buttons-sections">
 
-                            <button class="slider__btn slider__btn--left">  
+                                <button class="slider__btn slider__btn--left">  
                                 <svg class="slider__arrow">
                                     <use xlink:href="#slider__arrow"></use>
                                 </svg>
                             </button>
 
-                            <button class="slider__btn">  
+                                <button class="slider__btn">  
                                 <svg class="slider__arrow">
                                 <use xlink:href="#slider__arrow"></use>
                                 </svg>
                             </button>
+
+                            </div>
 
                         </div>
 
@@ -614,12 +627,144 @@
                 </div>
 
             </div>
+        </section>
+        <!-- END meet -->
 
-        </div>
-    </section>
+        <section class="section section--border-bottom">
+            <div class="container">
+
+                <div class="asked">
+
+                    <header class="section__header section__header--wide">
+                        <h2 class="section__title section__title--ultra-wide section__title--bigger-font">Frequently asked questions
+                        </h2>
+                        <h3 class="section__subtitle section__subtitle--wide">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                    </header>
+
+                    <div class="asked__body">
+
+                        <article class="asked__article asked__article--active">
+                            <h3 class="asked__title asked__title--active">How to contact with riders emergency?</h3>
+                            <p class="asked__text asked__text--active">
+                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment.
+                            </p>
+                        </article>
+
+                        <article class="asked__article">
+                            <h3 class="asked__title">App installation failed, how to update system information?</h3>
+                            <p class="asked__text">
+                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment.
+                            </p>
+                        </article>
+
+                        <article class="asked__article">
+                            <h3 class="asked__title">Website reponse taking time, how to improve?</h3>
+                            <p class="asked__text">
+                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment.
+                            </p>
+                        </article>
+
+                        <article class="asked__article">
+                            <h3 class="asked__title">New update fixed all bug and issues</h3>
+                            <p class="asked__text">
+                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment.
+                            </p>
+                        </article>
+
+                        <article class="asked__article">
+                            <h3 class="asked__title">How to contact with riders emergency?</h3>
+                            <p class="asked__text">
+                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- END asked -->
+
+        <section class="section">
+            <div class="container__wide">
+
+                <div class="download">
+                    <div class="download__main">
+
+                        <header class="section__header section__header--wide-uncentered">
+                            <h2 class="section__title section__title--large-font">Download our App now !</h2>
+                            <h3 class="section__subtitle">The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.</h3>
+                        </header>
+
+                        <div class="download__stores">
+                            <img src="/src/download/google__play.png" alt="" class="download__store-icon">
+                            <img src="/src/download/apple__store.png" alt="" class="download__store-icon">
+                        </div>
+
+                    </div>
+
+                    <div class="download__img-wrapper">
+                        <img src="/src/download/download.png" alt="" class="download__img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END download -->
+
+        <footer class="footer">
+            <section class="section">
+
+                <div class="footer__inner">
+
+                    <div class="logo ">App<span>Lab</span></div>
+
+                    <nav class="nav nav__footer">
+                        <a href="" class="nav__link">Home</a>
+                        <a href="" class="nav__link">Key Features</a>
+                        <a href="" class="nav__link">Pricing</a>
+                        <a href="" class="nav__link">Testiminial</a>
+                        <a href="" class="nav__link">FAQ</a>
+                    </nav>
+
+                    <div class="footer__social">
+                        <ul class="footer__list">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-slack-hash"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-github-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
 
 
 
+                    <div class="footer__copyrights">Copyright© Arifur Rahman Tushar 2019. All rights reserved</div>
+
+
+                </div>
+
+
+
+            </section>
+        </footer>
+
+
+    </main>
 
 </body>
 

@@ -1,74 +1,3 @@
-@charset "UTF-8";
-/* Drop Default Styles - here I`m dropping default styles */
-/*==========START========== */
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  /* line-height: 1.5; */
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* ==================END================== */
 /*fonts start*/
 /*fonts end*/
 *,
@@ -105,11 +34,20 @@ select {
 .section__header {
   width: 100%;
   max-width: 435px;
+  margin-bottom: 35px;
 }
 
 .section__header--wide {
   max-width: 635px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+}
+
+.section__header--wide-uncentered {
+  max-width: 635px;
+}
+
+.section__header--bigger-width {
+  max-width: 485px;
 }
 
 .section__title {
@@ -133,8 +71,19 @@ select {
   margin: 0 auto 30px;
 }
 
-.section__title-max-width {
+.section__title--ultra-wide {
   max-width: 572px;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.section__title--bigger-font {
+  font-size: 40px;
+}
+
+.section__title--large-font {
+  font-size: 48px;
+  line-height: 1.20833;
 }
 
 .section__subtitle {
@@ -188,7 +137,8 @@ select {
           justify-content: space-between;
 }
 
-.header__logo {
+/* END header */
+.logo {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -197,11 +147,11 @@ select {
   color: #fcae61;
 }
 
-.header__logo span {
+.logo span {
   color: #242f51;
 }
 
-/* END header */
+/* END logo */
 .nav__link {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -214,6 +164,10 @@ select {
 
 .nav__link:hover {
   text-decoration: underline;
+}
+
+.nav__footer {
+  margin: 35px 0;
 }
 
 /* END nav */
@@ -490,7 +444,7 @@ select {
 .features__body {
   width: 100%;
   max-width: 380px;
-  padding: 78px 0;
+  padding: 48px 0;
 }
 
 /* END features */
@@ -696,7 +650,7 @@ select {
 }
 
 .designed__btn {
-  padding: 25px 0;
+  padding: 0 0 25px;
 }
 
 /* END designed */
@@ -747,7 +701,6 @@ select {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -768,7 +721,7 @@ select {
 
 /* END ultimate */
 .get__header {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .get__switch {
@@ -825,10 +778,10 @@ select {
 
 .card__header {
   padding: 67px 15px 40px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#f4f7f9), to(white));
-  background-image: -webkit-linear-gradient(bottom, #f4f7f9, white);
-  background-image: -o-linear-gradient(bottom, #f4f7f9, white);
-  background-image: linear-gradient(bottom, #f4f7f9, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f4f7f9));
+  background-image: -webkit-linear-gradient(white, #f4f7f9);
+  background-image: -o-linear-gradient(white, #f4f7f9);
+  background-image: linear-gradient(white, #f4f7f9);
 }
 
 .card__price {
@@ -912,7 +865,7 @@ select {
 }
 
 .meet__rating {
-  padding: 29px 0 15px;
+  padding: 0 0 15px;
 }
 
 .meet__stars-list {
@@ -1040,3 +993,179 @@ select {
 }
 
 /* END slider */
+.asked__body {
+  width: 100%;
+  max-width: 945px;
+  margin: 40px auto 0;
+}
+
+.asked__article {
+  background-color: #f5f7fa;
+  margin-bottom: 10px;
+}
+
+.asked__article--active {
+  padding-top: 27px;
+}
+
+.asked__title {
+  padding: 20px 38px 15px 42px;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #242f51;
+}
+
+.asked__title:hover {
+  background-color: #e6e7e9;
+}
+
+.asked__title::after, .asked__title::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #242f51;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 0px 0px 1px;
+          box-shadow: 0px 0px 1px;
+  cursor: pointer;
+}
+
+.asked__title::before {
+  right: 38px;
+}
+
+.asked__title::after {
+  right: 38px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.asked__title--active::before {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.asked__title--active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.asked__text {
+  padding: 15px 88px 75px 42px;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 400;
+  color: #616368;
+  display: none;
+}
+
+.asked__text--active {
+  display: block;
+}
+
+/* END asked */
+.download {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(50px, 1fr) minmax(auto, 640px) minmax(auto, 834px);
+      grid-template-columns: minmax(50px, 1fr) minmax(auto, 640px) minmax(auto, 834px);
+}
+
+.download__main {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  position: relative;
+}
+
+.download__stores {
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.download__store-icon {
+  width: 185px;
+  height: 55px;
+  margin-right: 32px;
+}
+
+.download__store-icon:last-child {
+  margin-right: 0;
+}
+
+.download__img-wrapper {
+  position: relative;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.download__img {
+  position: absolute;
+  top: 65.25%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+}
+
+/* END downlaod */
+.footer {
+  background-color: #09142e;
+}
+
+.footer__inner {
+  padding: 10px 0;
+  max-width: 490px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__copyrights {
+  padding: 15px 0;
+  text-align: center;
+  opacity: 0.21;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 170px;
+}
+
+/* END footer */
